@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS TASK2</title>
+</head>
+<body>
+    <script>
+    //   Task 1
+    //      var number=[2,6,4,3,8];
+    //      var sum=0;
+    //      for(var i=0;i<number.length;i++){
+    //         sum+=number[i];
+    //      }
+    //      console.log(sum)
+
+//    taSKK 2-Deyish
+//     let numbers = [1, 2, 3, 4, 4, 5, 6, 6, 7, 8, 9, 9];
+//   let num =Array.from(new Set(numbers));
+
+// console.log(num);
+   
+// Task3
+// let array = [1, '2', 'qelem', 4, 'kitab', 6];
+// let numbersArray = array.filter(function(b)
+//  {
+//     return typeof b === 'number';
+// }
+// );
+
+// console.log(numbersArray);
+
+// // Task4//
+
+// function sozchevir(soz)
+// {
+//     return soz.split("").reverse().join("");
+// }
+// var soz="Rena";
+//  var chevir=sozchevir(soz);
+//  console.log(chevir)
+
+//  Task 5
+// function cumlecevir(cumle){
+//     return cumle.split(" ").reverse(" ").join(" ");
+// }
+// var cumle="Azərbaycanın paytaxtı Bakı şəhəridi";
+// var chevir=cumlecevir(cumle);
+// console.log(chevir);
+
+// task 7
+// function tameded(eded)
+// {
+//     if(eded%1==0)
+//     {
+//         return "bu eded tam ededir"
+//     }
+//     else{
+//         return " bu eded tam eded deyildir"
+//     }
+// }
+// var eded=Number(prompt("Edad daxil et"));
+
+// console.log(tameded(eded));
+
+// Task 8
+// var cumle=prompt("Bir cumle daxil edin");
+// let sozler = cumle.split(' ');
+// console.log("verilmish cumledeki sozlerin sayi: "+sozler.length)
+
+// task 9
+  
+// var cumle=prompt("Bir cümlə daxil ediniz");
+
+// console.log(cumle.replace(/\s+/g, ''))
+
+// task6
+
+// function edediSozleYaz(eded) {
+//     const birler = ['', 'Bir', 'İki', 'Üç', 'Dörd', 'Beş', 'Altı', 'Yeddi', 'Səkkiz', 'Doqquz'];
+//     const onlar = ['', 'On', 'İyirmi', 'Otuz', 'Qırx', 'Əlli', 'Altmış', 'Yetmiş', 'Səksən', 'Doxsan'];
+    
+//     if (eded < 10) {
+//         return birler[eded];
+//     } else if (eded < 100) {
+//         let onluq = Math.floor(eded / 10);
+//         let birlik = eded % 10;
+//         if (birlik === 0) {
+//             return onlar[onluq];
+//         } else {
+//             return onlar[onluq] + ' ' + birler[birlik];
+//         }
+//     } else {
+//         return 'Yüz';
+//     }
+// }
+
+// let eded = prompt("Sözlə ifadə etmək istədiyiniz ədədi daxil edin:");
+// console.log(eded + ": " + edediSozleYaz(parseInt(eded)));
+
+// task10
+//  function uppercumle(cumle)
+//  {
+//     return cumle.charAt(0).toUpperCase() + cumle.slice(1);
+//  }
+
+// var cumle=prompt("bir cumle yazin");
+//  console.log(uppercumle(cumle))
+
+// task11
+// function arraysEqual(arr1, arr2) {
+    
+    
+//     for (let i = 0; i < arr1.length; i++) {
+//         if (arr1[i] !== arr2[i]) {
+//             return false;
+//         }
+//     }
+    
+//     return true;
+// }
+
+// let arr1 = [1, 2, 3];
+// let arr2 = [1, 2, 3];
+// console.log(arraysEqual(arr1, arr2)); 
+
+// let arr3 = [1, 2, 3];
+// let arr4 = [3, 2, 1];
+// console.log(arraysEqual(arr3, arr4)); 
+
+// task13
+// let text = "Mətnin içərisində ADNA sözlərini tapın və onları ADNSU ilə əvəz edin. ADNA";
+// console.log(text);
+// let newText = text.replace(/ADNA/g, "ADNSU");
+// console.log(newText);
+  
+// task14
+
+// function aylıqƏməkHaqqıHesabla(saatiBaşına, həftəlikSaatlar) {
+//     var normalHəftəlikSaatlar = 40;
+//     const normalHəftəlikMaaş = saatiBaşına * həftəlikSaatlar;
+ 
+
+//     if (həftəlikSaatlar > normalHəftəlikSaatlar) {
+//     return normalHəftəlikMaaş *2;
+        
+//     }
+//     else{
+//         return normalHəftəlikMaaş;
+//     }
+// }
+
+// let saatiBaşına = 10; 
+// let həftəlikSaatlar=prompt("Həftəlik saatı daxil edin"); 
+
+// let aylıqƏməkHaqqı = aylıqƏməkHaqqıHesabla(saatiBaşına, həftəlikSaatlar);
+// console.log("Aylıq əmək haqqı:", aylıqƏməkHaqqı);
+// task15
+// function regem3(eded){
+//   var birinciregem=Math.floor(eded/100);
+//   var ikinciregem=Math.floor((eded/10)%10);
+//   var uchuncuregem=Math.floor(eded%10);
+//    var cem=birinciregem+ikinciregem+uchuncuregem;
+//    return cem;
+// }
+
+// var eded=prompt("3 Regemli eded daxil edin")
+//  console.log(regem3(eded));
+
+function tekrarlananSozlerinSayiniTap(metin) {
+    let sozler = metin.split(" ");
+    let tekrarlar = {};
+    
+    for (let i = 0; i < sozler.length; i++) {
+        let soz = sozler[i].toLowerCase();
+        if (tekrarlar[soz]) {
+            tekrarlar[soz]++;
+        } else {
+            tekrarlar[soz] = 1;
+        }
+    }
+    
+    let tekrarlananSayi = 0;
+    for (let soz in tekrarlar) {
+        if (tekrarlar.hasOwnProperty(soz) && tekrarlar[soz] > 1) {
+            tekrarlananSayi++;
+        }
+    }
+    
+    return tekrarlananSayi;
+}
+
+let metin = "Bu bir test metnidir. Bu metin bir-birindən fərqlidir.";
+let tekrarlananSayi = tekrarlananSozlerinSayiniTap(metin);
+console.log("Təkrarlanan sözlərin sayı:", tekrarlananSayi);
+
+    </script>
+</body>
+</html>
