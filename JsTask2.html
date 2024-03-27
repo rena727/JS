@@ -168,32 +168,34 @@
 // var eded=prompt("3 Regemli eded daxil edin")
 //  console.log(regem3(eded));
 
-function tekrarlananSozlerinSayiniTap(metin) {
-    let sozler = metin.split(" ");
-    let tekrarlar = {};
+//   task 17
+// function tekrarlananSozlerinSayiniTap(metin) {
+//     let sozler = metin.split(" ");
+//     let tekrarlar = {};
     
-    for (let i = 0; i < sozler.length; i++) {
-        let soz = sozler[i].toLowerCase();
-        if (tekrarlar[soz]) {
-            tekrarlar[soz]++;
-        } else {
-            tekrarlar[soz] = 1;
-        }
-    }
+//     for (let i = 0; i < sozler.length; i++) {
+//         let soz = sozler[i].toLowerCase();
+//         if (tekrarlar[soz]) {
+//             tekrarlar[soz]++;
+//         } else {
+//             tekrarlar[soz] = 1;
+//         }
+//     }
     
-    let tekrarlananSayi = 0;
-    for (let soz in tekrarlar) {
-        if (tekrarlar.hasOwnProperty(soz) && tekrarlar[soz] > 1) {
-            tekrarlananSayi++;
-        }
-    }
+//     let tekrarlananSayi = 0;
+//     for (let soz in tekrarlar) {
+//         if (tekrarlar.hasOwnProperty(soz) && tekrarlar[soz] > 1) {
+//             tekrarlananSayi++;
+//         }
+//     }
     
-    return tekrarlananSayi;
-}
+//     return tekrarlananSayi;
+// }
 
-let metin = "Bu bir test metnidir. Bu metin bir-birindən fərqlidir.";
-let tekrarlananSayi = tekrarlananSozlerinSayiniTap(metin);
-console.log("Təkrarlanan sözlərin sayı:", tekrarlananSayi);
+// let metin = "Bu bir test metnidir. Bu metin bir-birindən fərqlidir.";
+// let tekrarlananSayi = tekrarlananSozlerinSayiniTap(metin);
+// console.log("Təkrarlanan sözlərin sayı:", tekrarlananSayi);
+
 
     </script>
 </body>

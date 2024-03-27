@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+
+    <script>
+//        task 1
+
+//        let arr = [1, 2, 3, 4, 5, 6, 7, 8, 9];
+
+// for (let i = 0; i < arr.length; i++) {
+//     if (i % 2 !== 0) {
+//         console.log(arr[i]);
+//     }
+// }
+
+// task2
+
+//  var arr=[23,40,80,35,50,34,98,78];
+
+//  for(var i=0; i<arr.length;i++)
+//  {
+//     if(arr[i]%5==0)
+//     {
+//         console.log(arr[i]);
+//     }
+//  }
+
+// task 4
+
+// let arr = [21,78,49,34,90,70,87];
+
+// let sonuncuYer = -1;
+// for (let i = arr.length - 1; i >= 0; i--) {
+//     if (arr[i] % 7 === 0) {
+//         sonuncuYer = i;
+//         break;
+//     }
+// }
+
+// if (sonuncuYer !== -1) {
+//     console.log("Array elementləri daxilində 7-ə bölünən sonuncu ədəd:", arr[sonuncuYer]);
+// } else {
+//     console.log("Array elementləri daxilində 7-ə bölünən ədəd tapılmadı.");
+// }
+ 
+// task5
+
+// var arr=[23.89,36,89,17,90,22];
+
+// let enBoyuk = Math.max(...arr);
+// let enKicik = Math.min(...arr);
+
+// console.log("Ən böyük element:", enBoyuk);
+// console.log("Ən kiçik element:", enKicik);
+
+// TASK6
+
+ 
+// let arr = [5, 8, 2, 15, 4, 7, 10];
+
+// let enBoyukIndex = arr.indexOf(Math.max(...arr));
+// let enKicikIndex = arr.indexOf(Math.min(...arr));
+
+// let temp = arr[enBoyukIndex];
+// arr[enBoyukIndex] = arr[enKicikIndex];
+// arr[enKicikIndex] = temp;
+
+// console.log("Yerləşdirmədən əvvəl array:", arr);
+
+// task9
+
+// for(var i=0;i<101;i++)
+// {
+//     if(i%10==1)
+//     {
+//         console.log(i)
+//     }
+// }
+
+
+// task 10
+// function isPalindrome(str) {
+//     str = str.toUpperCase().replace(/[^A-Z0-9]/g, '');
+    
+//     let reversedStr = str.split('').reverse().join('');
+    
+//     return str === reversedStr;
+// }
+
+// let input = prompt("soz daxil edin");
+// if (isPalindrome(input)) {
+//     console.log(input + " bir palindromdur.");
+// } else {
+//     console.log(input + " bir palindrom deyil.");
+// }
+
+//  task11
+// function areAnagrams(word1, word2) {
+//     // Sözləri böyük hərflərə çeviririk və simvollarını silirik
+//     word1 = word1.toUpperCase().replace(/[^A-Z]/g, '');
+//     word2 = word2.toUpperCase().replace(/[^A-Z]/g, '');
+    
+//     // Sözləri ayrı-ayrı hərflərə bölüb siyahıya salırıq
+//     let arr1 = word1.split('');
+//     let arr2 = word2.split('');
+    
+//     // Hər iki siyahını sort edirik
+//     arr1.sort();
+//     arr2.sort();
+    
+//     // Sort edilmiş siyahılar eyni olduğu təqdirdə true qaytarırıq, əks halda false
+//     return arr1.join('') === arr2.join('');
+// }
+
+// // Daxil olunmuş iki sözün anaqram olub olmadığını yoxlayır
+// let word1 = prompt("1-ci sözü daxil ediniz");
+// let word2 = prompt("2-ci sözü daxil ediniz");
+// if (areAnagrams(word1, word2)) {
+//     console.log(word1 + " və " + word2 + " anaqramdır.");
+// } else {
+//     console.log(word1 + " və " + word2 + " anaqram deyil.");
+// }
+
+// task12
+
+// function ikiArrayInHasili(arr1, arr2) {
+//     let netice = [];
+//     for (let i = 0; i < arr1.length; i++) {
+//         netice.push(arr1[i] * arr2[i]);
+//     }
+//     return netice;
+// }
+
+// let birinciArray = [2, 5];
+// let ikinciArray = [3, 6];
+
+// let neticeArray = ikiArrayInHasili(birinciArray, ikinciArray);
+// console.log(neticeArray);
+
+// task13
+// function saitleriSil(text) {
+//     return text.replace(/[aeöüəıiou]/ig, '');
+// }
+
+// let metn = prompt("Mətn daxil edin");
+// let netice = saitleriSil(metn);
+// console.log(netice);
+
+
+// task14
+// function randomString(length) {
+//     let result = '';
+//     let characters = 'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789';
+//     let charactersLength = characters.length;
+//     for (let i = 0; i < length; i++) {
+//         result += characters.charAt(Math.floor(Math.random() * charactersLength));
+//     }
+//     return result;
+// }
+
+// let length = parseInt(prompt("Daxil edin: "));
+// let randomStr = randomString(length);
+// console.log(randomStr);
+
+
+// task15
+  
+//   var arr=[4,6,5];
+//   var ortalma;
+//   var sum=0;
+//       for(var i=0;i<arr.length;i++){
+//         sum+=arr[i];
+//       }
+//       ortalma=sum/arr.length;
+//       console.log(ortalma)
+
+// task16
+
+// function saitSamitSayi(text) {
+//     text = text.toLowerCase();
+//     let saitler = 'aeiouəıüö';
+//     let saitSayi = 0;
+//     let samitSayi = 0;
+
+//     for (let i = 0; i < text.length; i++) {
+//         let harf = text[i];
+//         if (saitler.indexOf(harf) !== -1) {
+//             saitSayi++;
+//         } else if (harf.match(/[a-z]/i)) {
+//             samitSayi++;
+//         }
+//     }
+
+//     return { saitSayi, samitSayi };
+// }
+
+// let soz = prompt("Bir söz daxil edin: ");
+// let netice = saitSamitSayi(soz);
+// console.log("Sait sayı:", netice.saitSayi);
+// console.log("Samit sayı:", netice.samitSayi);
+
+// task17
+
+// function mukemmelEdedYoxla(eded) {
+//     let bolenlerinCemi = 0;
+//     for (let i = 1; i < eded; i++) {
+//         if (eded % i === 0) {
+//             bolenlerinCemi += i;
+//         }
+//     }
+//     return bolenlerinCemi === eded;
+// }
+
+// let eded = parseInt(prompt("Bir ədəd daxil edin: "));
+// if (mukemmelEdedYoxla(eded)) {
+//     console.log(eded + " mükəmməl ədəddir.");
+// } else {
+//     console.log(eded + " mükəmməl ədəd deyil.");
+// }
+
+// task18
+// function reqemlerinCemiTap(eded) {
+//     let cem = 0;
+//     while (eded > 0) {
+//         cem += eded % 10;
+//         eded = Math.floor(eded / 10);
+//     }
+//     return cem;
+// }
+
+// let eded = parseInt(prompt("Bir ədəd daxil edin: "));
+// let cem = reqemlerinCemiTap(eded);
+// console.log("Rəqəmlərin cəmi:", cem);
+
+// task3
+
+// function sadeMiMurekkebMi(eded) {
+//     if (eded <= 1) {
+//         return "Ədəd sadə deyil";
+//     }
+
+//     for (let i = 2; i <= Math.sqrt(eded); i++) {
+//         if (eded % i === 0) {
+//             return "Ədəd mürəkkəbdir";
+//         }
+//     }
+
+//     return "Ədəd sadədir";
+// }
+
+// let eded = parseInt(prompt("Bir ədəd daxil edin: "));
+// let cavab = sadeMiMurekkebMi(eded);
+// console.log(cavab);
+
+// task19
+
+// var text="Rena"
+// console.log(text.substring(1,4)) /// indexde olan simvolu verir
+ 
+
+// task20
+// var text="Rena";
+// console.log(text.indexOf("e"))// indexini gosterir
+
+    </script>
+    
+</body>
+</html>
